@@ -46,7 +46,7 @@ class subcategorycontroller extends Controller
             'category_id'=>$request->category,
         ]);
         notify()->success('Subcategory is created');
-        return redirect()->back();
+        return redirect()->route('subcategory.index');
     }
 
     /**
